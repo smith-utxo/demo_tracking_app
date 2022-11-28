@@ -1,0 +1,43 @@
+*{
+  Margin: 0;
+  Padding: 0; 
+  Box-sizing: border-box;
+}
+
+nav {
+  display: flex; 
+  justify-content: center;
+  margin: 1.5em; 
+
+}
+ul {
+  list-style: none; 
+}
+label {
+  font-size: 26px; 
+}
+
+.forms {
+  padding: 5px; 
+  margin-left: 40%;
+}
+
+.btn {
+  margin-top: 10px; 
+}
+
+.samples {
+  margin-left: 40px; 
+}
+
+.image {
+  display: flex; 
+  justify-content: center;
+}
+
+#stylePara {
+  display: flex; 
+  justify-content: center;
+  white-space: pre;
+  margin-top: 10px; 
+}
