@@ -3,18 +3,26 @@
   Padding: 0; 
   Box-sizing: border-box;
 }
-
+h1 {
+  font-size: 40px; 
+}
 nav {
   display: flex; 
   justify-content: center;
   margin: 1.5em; 
 
 }
+
+h4 {
+  margin-bottom: 10px; 
+}
+
 ul {
   list-style: none; 
 }
 label {
   font-size: 26px; 
+  margin-bottom: 5px; 
 }
 
 .forms {
@@ -40,4 +48,5 @@ label {
   justify-content: center;
   white-space: pre;
   margin-top: 10px; 
+  font-size: 18px; 
 }

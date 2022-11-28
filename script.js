@@ -1,27 +1,32 @@
 const form = document.getElementById("forms");
 const populateResults = document.getElementById("populateResults");
+let paragraph = document.createElement("p");
+paragraph.setAttribute("id", "stylePara");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   const trackingInfo = document.getElementById("trackingInfo").value;
-  console.log(trackingInfo);
   populateResults.innerHTML = ""; // clear previous results
+  populateData(trackingInfo);
+});
 
+function populateData(trackingInfo) {
   for (let i = 0; i < trackingSeedData.length; i++) {
     if (trackingInfo == trackingSeedData[i].id) {
-      let paragraph = document.createElement("p");
-      paragraph.setAttribute("id", "stylePara");
       let seed = trackingSeedData[i];
-      paragraph.textContent = `      Status: ${seed.Status} \r\n
+      paragraph.textContent = `      
+      Status: ${seed.Status} \r\n
       Date Shipped: ${seed.Date_Shipped} \r\n
       Estimated Delivery Date: ${seed.Estimated_Delivery_Date} \r\n
       Destination: ${seed.Destination}`;
-
       populateResults.appendChild(paragraph);
-      console.log(trackingSeedData[i].Date_Shipped);
+      // console.log(trackingSeedData[i].Date_Shipped);
+      return;
     }
   }
-});
+  paragraph.textContent = `Unable to Locate Tracking Number!`;
+  populateResults.appendChild(paragraph);
+}
 
 const trackingSeedData = [
   {
@@ -61,4 +66,4 @@ const trackingSeedData = [
   },
 ];
 
-console.log(trackingSeedData[0].Status); // equals In Route!!
+// console.log(trackingSeedData[0].Status); // equals In Route!
