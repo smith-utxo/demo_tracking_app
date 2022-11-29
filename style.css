@@ -1,62 +1,70 @@
-*{
-  Margin: 0;
-  Padding: 0; 
-  Box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  min-height: 100vh;
+}
+
 h1 {
-  font-size: 40px; 
+  font-size: 40px;
 }
 nav {
-  display: flex; 
+  display: flex;
   justify-content: center;
-  margin: 1.5em; 
-
+  margin: 1.5em;
 }
 
 h4 {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 ul {
-  list-style: none; 
+  list-style: none;
   cursor: pointer;
   max-width: 2em;
 }
 
 ul li {
-  font-size: 14px; 
+  font-size: 14px;
 }
 ul li:hover {
-  color: red; 
+  color: red;
   width: 100%;
 }
 label {
-  font-size: 26px; 
-  margin-bottom: 5px; 
+  font-size: 26px;
+  margin-bottom: 5px;
 }
 
 .forms {
-  padding: 5px; 
+  padding: 5px;
   margin-left: 40%;
 }
 
 .btn {
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .samples {
-  margin-left: 40px; 
+  margin-left: 40px;
 }
 
 .image {
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
 
+.sticky {
+  position: sticky;
+  top: 100%;
+}
 #stylePara {
-  display: flex; 
+  display: flex;
   justify-content: center;
   white-space: pre;
-  margin-top: 10px; 
-  font-size: 18px; 
+  margin-top: 10px;
+  font-size: 18px;
 }
