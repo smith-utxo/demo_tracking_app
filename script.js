@@ -1,7 +1,13 @@
 const form = document.getElementById("forms");
 const populateResults = document.getElementById("populateResults");
+const sampleNumbers = document.querySelector(".sampleNumbers");
 let paragraph = document.createElement("p");
 paragraph.setAttribute("id", "stylePara");
+
+sampleNumbers.addEventListener("click", function (e) {
+  let trackingInfo = document.getElementById("trackingInfo");
+  trackingInfo.value = e.target.innerText;
+});
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();

@@ -19,6 +19,16 @@ h4 {
 
 ul {
   list-style: none; 
+  cursor: pointer;
+  max-width: 2em;
+}
+
+ul li {
+  font-size: 14px; 
+}
+ul li:hover {
+  color: red; 
+  width: 100%;
 }
 label {
   font-size: 26px; 
